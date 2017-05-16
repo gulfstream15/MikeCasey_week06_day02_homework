@@ -16,6 +16,17 @@ public class Photographer{
     this.cameras.add(camera);
   }
 
-  
+  public Printable removeCamera() {
+     if (cameraCount() > 0) {
+      return cameras.remove(0);
+    }
+    return null;
+  }
+
+  public void printAllCameras() {
+      for(Printable camera: this.cameras) {
+        System.out.println(camera.);
+      }
+  } 
 
 }
