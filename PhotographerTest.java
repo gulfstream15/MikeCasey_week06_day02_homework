@@ -5,12 +5,12 @@ import org.junit.*;
 public class PhotographerTest{
 
   Photographer photographer;
+  DigitalCamera digitalCamera;
+  AnalogCamera analogCamera;
   
   @Before 
   public void before() {
-    photographer = new Photographer("Nikon 34T", 
-                                       "Noise reduction filter",
-                                       "Hi-resolution"); 
+    photographer = new Photographer(); 
   }
 
   @Test
@@ -20,7 +20,14 @@ public class PhotographerTest{
 
   @Test
   public void hasCamera(){
-    assertEquals("Baloo", bear.getName());
+    photographer.addCamera(digitalCamera);
+    assertEquals(1, photographer.cameraCount());
+  }
+
+  @Test
+  public void canAddCamera(){
+    photographer.addCamera(analogCamera);
+    assertEquals(1, photographer.cameraCount());
   }
 
 }
