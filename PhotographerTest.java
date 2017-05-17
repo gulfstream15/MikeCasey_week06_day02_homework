@@ -38,5 +38,11 @@ public class PhotographerTest{
     assertNotNull(camera);
   }
 
+  // @Test
+  // public void canPrintAllCameras() {
+  //   photographer.printAllCameras;
+  //   assertNotNull(camera);
+  // }  
+
 
 }

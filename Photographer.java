@@ -23,10 +23,10 @@ public class Photographer{
     return null;
   }
 
-  public void printAllCameras() {
-      for(Printable camera: this.cameras) {
-        System.out.println(camera.);
-      }
-  } 
+  // public void printAllCameras() {
+  //     for(Printable camera: this.cameras) {
+  //       System.out.println(camera.printDetails);
+  //     }
+  // } 
 
 }
