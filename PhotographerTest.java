@@ -38,11 +38,11 @@ public class PhotographerTest{
     assertEquals(1, photographer.cameraCount());
   }
 
-  // @Test
-  // public void canPrintAllCameras() {
-  //   photographer.printAllCameras;
-  //   assertNotNull(camera);
-  // }  
+  @Test
+  public void canPrintAllCameras() {
+    photographer.printAllCameras();
+    // assertNotNull(camera);
+  }  
 
 
 }
