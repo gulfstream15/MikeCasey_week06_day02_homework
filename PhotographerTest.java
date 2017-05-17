@@ -35,7 +35,7 @@ public class PhotographerTest{
     photographer.addCamera(digitalCamera);
     photographer.addCamera(analogCamera);
     Printable camera = photographer.removeCamera();
-    assertNotNull(camera);
+    assertEquals(1, photographer.cameraCount());
   }
 
   // @Test
